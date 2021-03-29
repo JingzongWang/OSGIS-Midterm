@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- CSS Imports -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div id="intro">
+        <h1 id="title">California EV Charging Station Map</h1>  
+        <p id="content"> California has continued to see much faster uptake of electric vehicles than elsewhere in the United States. Public charging infrastructure—a key consideration for electric vehicle drivers—also expanded dramatically in California during recent years, and now (2021) represents 28% of all U.S. public charging infrastructure. </p>
+        <br>
+        <p id="data-source">Data Source: <a href="https://afdc.energy.gov/fuels/electricity_locations.html#/find/nearest?fuel=ELEC">The National Renewable Energy Laboratory (NREL)</a></p>
+      </div>
+      <div id="slide">
+          <h1>From <b><span id="start"></span></b>  To <b><span id="end"></span></b>  </h1>
+          <p id="slide-content">  <b><span id="num-of-new"></span></b> new charging stations were built. The total number of charging station in <b><span id="current-year"></span></b> is <b><span id="total-number"></span></b> </p>
+      </div>
+      <div id="sidebar-below"> 
+          <button id="prev">Previous</button>
+          <button id="next">Next</button>
+      </div>
+    </div>
+
+    <!-- Map -->
+    <div id="map" class="map"></div>
+
+    <!-- Legend -->
+    <div class="legend"></div>
+
+    <!-- Javascript Imports -->
+    <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
 
